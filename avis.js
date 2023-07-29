@@ -1,3 +1,4 @@
+/* global document ,window,fetch, Chart */
 export function ajoutListenersAvis() {
 
     const piecesElements = document.querySelectorAll(".fiches article button");
@@ -76,7 +77,7 @@ export function ajoutListenersAvis() {
         },
     };
     // Rendu du graphique dans l'élément canvas
-    const graphiqueAvis = new Chart(
+    new Chart(
         document.querySelector("#graphique-avis"),
         config,
     );

@@ -1,3 +1,4 @@
+/* global document ,window,fetch, console */
 import { ajoutListenersAvis, ajoutListenerEnvoyerAvis, afficherAvis, afficherGraphiqueAvis } from "./avis.js";
 //Récupération des pièces eventuellement stockées dans le localStorage
 let pieces = window.localStorage.getItem('pieces');
